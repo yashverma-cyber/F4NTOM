@@ -1,0 +1,8 @@
+disass main
+find function calling what register
+and then info functions to check other functions
+disass func1
+find eax value in that function
+and then convert to decimal
+
+flag --> picoCTF{12905}

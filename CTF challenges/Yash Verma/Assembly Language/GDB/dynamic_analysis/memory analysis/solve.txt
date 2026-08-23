@@ -1,0 +1,8 @@
+**DISAS + BREAK**
+(gdb) break *main+22
+This sets a breakpoint at the instruction immediately after the one in question. This guarantees that the instruction in question has actually been executed.
+(gdb) run This lets the program run until it tries to execute the instruction at our breakpoint.
+(gdb) x/4xb $rbp-0x4
+0x7fffffffdc1c: 0x6b    0xc9    0x62    0x22
+flag → picoCTF{6bc96222}
+

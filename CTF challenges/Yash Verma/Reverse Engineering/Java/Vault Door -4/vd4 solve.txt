@@ -1,0 +1,10 @@
+it used multiple number base systems to encode
+
+106 , 85  , 53  , 116 , 95  , 52  , 95  , 98  are in Decimal
+convert to ASCII 
+0x55, 0x6e, 0x43, 0x68, 0x5f, 0x30, 0x66, 0x5f are in HexaDecimal
+convert to ASCII
+0142, 0131, 0164, 063 , 0163, 0137, 061 , 063 are Octal (note remove extra 0s)
+convert to ASCII
+
+flag --> picoCTF{jU5t_4_bUnCh_0f_bYt3s_13df618a23}

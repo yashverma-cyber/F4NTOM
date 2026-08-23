@@ -1,0 +1,19 @@
+the array values are in decimal 
+
+Convert that decimal values into Binary
+then we get 32 bits of binary, separate them into 8 bit hexa decimal values
+so we get 4 values of hex from 1 binary 
+and then convert those hex into ASCII 
+
+
+		x[0] == 1096770097 => hexa - 415F6231 => ASCII - A_b1
+            && x[1] == 1952395366 => HEX - 745F3066 => ASCII - t_0f
+            && x[2] == 1600270708 => HEX - 5F623174 => ASCII - _b1t
+            && x[3] == 1601398833 => HEX - 5F736831 => ASCII - _sh1
+            && x[4] == 1716808014 => HEX - 6654694E => ASCII - fTiN
+            && x[5] == 1734287392 => HEX - 675F2020 => ASCII - g_  
+            && x[6] == 942891831 => HEX - 38336377 => ASCII - 83c7
+            && x[7] == 876032566 => HEX - 34373236 => ASCII - 4726
+
+
+flag --> picoCTF{A_b1t_0f_b1t_sh1fTiNg_  83c74726}

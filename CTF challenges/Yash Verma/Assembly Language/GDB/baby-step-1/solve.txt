@@ -1,0 +1,7 @@
+chmod +x debugger0_a
+gdb ./debugger0_a
+info functions
+disass main
+check value of eax it is being changed to 0x86342
+print 0x86342
+flag is the value....

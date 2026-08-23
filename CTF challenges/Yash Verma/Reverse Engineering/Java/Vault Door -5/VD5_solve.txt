@@ -1,0 +1,9 @@
+decode the given 3 base64 code and merge them 
+we get this
+%63%30%6e%76%33%72%74%31%6e%67%5f%66%72%30%6d%5f%62%61%35%65%5f%36%34%5f%62%65%39%66%31%30%61%34
+
+now decode this URL encoding
+and we get 
+c0nv3rt1ng_fr0m_ba5e_64_be9f10a4
+
+this is flag --> picoCTF{c0nv3rt1ng_fr0m_ba5e_64_be9f10a4}

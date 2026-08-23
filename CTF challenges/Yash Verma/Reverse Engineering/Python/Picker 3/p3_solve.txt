@@ -1,0 +1,15 @@
+we could ‘modify’ the table: by simply replacing the content of the win() into one of the variable called. This was due to the exec() command which was called in the write_variable. This is one another very unsecure function, if not handled correctly.
+
+Steps --> 
+run the machine nc Saturn.picoctf.net portno
+give the following inputs
+1 (print_table)
+3 (write_variable)
+enter variable to write : read_variable
+enter new value of variable : win
+
+now read this variable 
+we get a lot of hexadecimal values
+
+flag --> picoCTF{7h15_15_wh47_w3_g37_w17h_u53r5_1n_ch4rg3_c20f5222}
+
