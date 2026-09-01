@@ -1,0 +1,40 @@
+Step:1 -->Firstly "gunzip disko-4.dd.gz".
+
+Step:2 --> "fls disko-4.dd".
+
+d/d 4:  log
+v/v 3225859:    $MBR
+v/v 3225860:    $FAT1
+v/v 3225861:    $FAT2
+V/V 3225862:    $OrphanFiles
+                                
+Step:3 --> Then "fls -r -d disko-4.dd".
+
+r/r * 522629:   log/messages
+r/r * 532021:   log/dont-delete.gz
+
+Step:4 --> Then "istat disko-4.dd 532021 ".
+
+Directory Entry: 532021
+Not Allocated
+File Attributes: File, Archive
+Size: 87
+Name: _ONT-D~1.GZ
+
+Directory Entry Times:
+Written:        2026-02-04 21:54:32 (IST)
+Accessed:       2026-02-04 00:00:00 (IST)
+Created:        2026-02-04 21:54:32 (IST)
+
+Sectors:
+36434 
+         
+Step:5 --> "icat disko-4.dd 532021 > dont-delete.gz".
+
+Step:6 -->Then "gzip -d dont-delete.gz".
+
+Step:7 --> Then "cat dont-delete".
+
+Here is your flag
+picoCTF{d3l_d0n7_h1d3_w3ll_4fed4369}
+                                       

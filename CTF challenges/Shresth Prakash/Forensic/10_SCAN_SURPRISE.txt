@@ -1,0 +1,19 @@
+1.First download the "challenge.zip" file.
+
+2.Then "unzip challenge.zip"
+
+3.It will give you the output like this.
+ Archive:  challenge.zip
+   creating: home/ctf-player/drop-in/
+ extracting: home/ctf-player/drop-in/flag.png  
+                                                        
+4.then "cd  home/ctf-player/drop-in/ "
+
+5.THere you will find the image "flag.png"
+
+6.Then download the "zbarimg tool" to scan the scanner.
+
+7.Then run this command " zbarimg flag.png"
+
+8.Then you will get the OUtput.
+

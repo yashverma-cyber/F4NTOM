@@ -1,0 +1,14 @@
+1. Download the logs.txt
+
+2.go to cyberchef --> https://gchq.github.io/CyberChef/
+
+3. Upload you file here
+
+4. Click on magic button
+
+5. It will generate you a image as an output with hexadecimal-encoded string and download the image(recovered.png)
+
+6.Again open cyberchef paste that hexadecimal encoding string
+
+7. Then you will get your flag --> "picoCTF{FIND_YOUR_SELF}"
+

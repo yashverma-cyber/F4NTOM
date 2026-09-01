@@ -1,0 +1,111 @@
+Step:1--> use "gunzip disk.img".
+
+Step:2--> Then "sudo kpartx -av disk.img".
+
+add map loop0p1 (254:0): 0 614400 linear 7:0 2048
+add map loop0p2 (254:1): 0 524288 linear 7:0 616448
+add map loop0p3 (254:2): 0 956416 linear 7:0 1140736
+
+Step:3 -->Then "mkdir -p /mnt/p1 mnt/p3".
+
+Step:4 --> Then "sudo mount /dev/mapper/loop0p1 /mnt/p1".
+
+Step:5 --> Then "sudo mount /dev/mapper/loop0p1 /mnt/p3".
+
+Step:6 --> Then "cd mnt/p3".
+
+Step:7 --> Then "ls -la ".
+
+total 45
+drwxr-xr-x 22 root root  1024 Nov 19  2025 .
+drwxr-xr-x  4 root root  4096 Aug 25 10:38 ..
+drwxr-xr-x  2 root root  4096 Nov 19  2025 bin
+drwxr-xr-x  2 root root  1024 Nov 12  2025 boot
+drwxr-xr-x  2 root root  1024 Nov 12  2025 dev
+drwxr-xr-x 30 root root  3072 Nov 19  2025 etc
+drwxr-xr-x  3 root root  1024 Nov 12  2025 home
+drwxr-xr-x 10 root root  1024 Nov 12  2025 lib
+drwx------  2 root root 12288 Nov 12  2025 lost+found
+drwxr-xr-x  5 root root  1024 Nov 12  2025 media
+drwxr-xr-x  2 root root  1024 Nov 12  2025 mnt
+drwxr-xr-x  2 root root  1024 Nov 12  2025 opt
+drwxr-xr-x  2 root root  1024 Nov 12  2025 proc
+drwx------  2 root root  1024 Nov 19  2025 root
+drwxr-xr-x  2 root root  1024 Nov 12  2025 run
+drwxr-xr-x  2 root root  5120 Nov 12  2025 sbin
+drwxr-xr-x  2 root root  1024 Nov 12  2025 srv
+drwxr-xr-x  2 root root  1024 Nov 19  2025 swap
+drwxr-xr-x  2 root root  1024 Nov 12  2025 sys
+drwxrwxrwt  2 root root  1024 Nov 12  2025 tmp
+drwxr-xr-x  8 root root  1024 Nov 12  2025 usr
+drwxr-xr-x 11 root root  1024 Nov 19  2025 var
+
+
+Step:8 --> Then similarly go home/ctf-plyer/code/killer-chat-app/logs/.git.
+
+Step:9 --> Then "ls -la ".
+
+total 13
+drwxr-sr-x  8 shresth shresth 1024 Nov 19  2025 .
+drwxr-sr-x  4 shresth shresth 1024 Nov 19  2025 ..
+drwxr-sr-x  2 shresth shresth 1024 Nov 19  2025 branches
+-rw-r--r--  1 shresth shresth   20 Nov 19  2025 COMMIT_EDITMSG
+-rw-r--r--  1 shresth shresth  150 Nov 19  2025 config
+-rw-r--r--  1 shresth shresth   73 Nov 19  2025 description
+-rw-r--r--  1 shresth shresth   23 Nov 19  2025 HEAD
+drwxr-sr-x  2 shresth shresth 1024 Nov 19  2025 hooks
+-rw-r--r--  1 shresth shresth  478 Nov 19  2025 index
+drwxr-sr-x  2 shresth shresth 1024 Nov 19  2025 info
+drwxr-sr-x  3 shresth shresth 1024 Nov 19  2025 logs
+drwxr-sr-x 23 shresth shresth 1024 Nov 19  2025 objects
+drwxr-sr-x  4 shresth shresth 1024 Nov 19  2025 refs
+
+Step:10 --> "cd logs".
+
+Step:11 --> use "ls".
+
+HEAD  refs
+
+Step:12 --> use "cat HEAD".
+
+2c0a9b2b15dce92f800393d5030c7454efc278ae 26b809e0c41d8421f1126ed3a4eb06ad66e6d90a ctf-player <ctf-player@example.com> 1763549240 +0000  commit: Add video game chat log
+26b809e0c41d8421f1126ed3a4eb06ad66e6d90a 5827632e046a80a1e0d7b4fc5c7800dd539baeaf ctf-player <ctf-player@example.com> 1763549240 +0000  commit: Add TV show chat log
+5827632e046a80a1e0d7b4fc5c7800dd539baeaf e80b38b3322a5ba32ac07076ef5eeb4a59449875 ctf-player <ctf-player@example.com> 1763549240 +0000  commit: Add secret hideout chat log
+e80b38b3322a5ba32ac07076ef5eeb4a59449875 2151ef0ccc15aed1ab88e1afdc7484aaeff211c4 ctf-player <ctf-player@example.com> 1763549240 +0000  commit: Remove secret hideout log
+2151ef0ccc15aed1ab88e1afdc7484aaeff211c4 01533f718556a0e59f1467dae4fa462eed82c2a1 ctf-player <ctf-player@example.com> 1763549240 +0000  commit: Add random chat log
+                                                                                                                                                                   
+
+Step:13 --> now "git show e80b38b3322a5ba32ac07076ef5eeb4a59449875".
+
+commit e80b38b3322a5ba32ac07076ef5eeb4a59449875
+Author: ctf-player <ctf-player@example.com>
+Date:   Wed Nov 19 10:47:20 2025 +0000
+
+    Add secret hideout chat log
+
+diff --git a/logs/3.txt b/logs/3.txt
+new file mode 100644
+index 0000000..7178644
+--- /dev/null
++++ b/logs/3.txt
+@@ -0,0 +1,3 @@
++Rex: Meet at the old arcade basement for the secret hideout.
++Jay: Ask Rusty at the door and use password picoCTF{g17_r35cu3_16ac6bf3}.
++Rex: Bring the decoder map so we can plan the route.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+vv

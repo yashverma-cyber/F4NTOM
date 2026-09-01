@@ -1,0 +1,12 @@
+1. Download the zip file "unknown.zip"
+
+2. Then use "unzip unknown.zip", you get the output like this .
+    Archive:  unknown.zip
+  inflating: ukn_reality.jpg 
+
+3.now "exiftool ukn_reality.jpg".
+
+4.In the "Attribution URL" section you will get a Base64 encoding copy it.
+
+5. GO to cyberchef and paste it and decode it you will get the flag.
+

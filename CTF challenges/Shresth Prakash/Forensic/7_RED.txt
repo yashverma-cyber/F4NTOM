@@ -1,0 +1,13 @@
+1.Download the image "red.png".
+
+2.use the tool --> "zsteg".
+
+3. use "zsteg -a red.png".
+
+4. In the 4th line of the output you will notice that there is base64 encoding.
+
+5.Paste that base64 encoding into cyberchef -->"https://gchq.github.io/CyberChef/"
+
+6.Click on the magic button.
+
+7. Then you would get your FLag.

@@ -1,0 +1,15 @@
+1. AFter successfully connected with the server here you will see 3 files.
+   checksum.txt  decrypt.sh  files
+
+2.Here we need to create the hashes so we can verify real one.
+
+3.use this command --> "sha256sum /home/ctf-player/drop-in/files/*"
+
+4.Then run this command --> "sha256sum /home/ctf-player/drop-in/files/* | grep fba9f49bf22aa7188a155768ab0dfdc1f9b86c47976"
+
+5.output-->"fba9f49bf22aa7188a155768ab0dfdc1f9b86c47976cd0f7c9003af2e20598f7  /home/ctf-player/drop-in/files/87590c24
+"
+
+6.Then run this command to decrypt --> "./decrypt.sh files/87590c24"
+
+7.Then you will get the Flag.

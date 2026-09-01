@@ -1,0 +1,9 @@
+1.Firstly download the file "cat.jpg".
+
+2.Then use "exiftool cat.jpg".
+
+3.You will get the base64 encoding in "License" section.
+
+4.Copy that code , then open cyberchef , paste that code and decode.
+
+5.You will get your Flag.

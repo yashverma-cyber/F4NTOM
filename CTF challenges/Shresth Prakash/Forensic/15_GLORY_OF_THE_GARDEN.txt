@@ -1,0 +1,5 @@
+1.Firstly download the file "garden.jpg".
+
+2.Then use "strings garden.jpg"
+
+3. You will get the Flag in the Last.

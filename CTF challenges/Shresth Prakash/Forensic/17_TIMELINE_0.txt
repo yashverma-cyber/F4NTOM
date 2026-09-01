@@ -1,0 +1,26 @@
+1.First Download the file "partition4.img.gz"
+
+2.Then "gunzip partition4.img.gz"
+
+3.Then "file partition4.img"
+  output : partition4.img: Linux rev 1.0 ext4 filesystem data
+
+4.Then "fls -r -m / partition4.img > body.txt"
+
+5.Then "mactime -b body.txt -d > timeline.csv"
+
+6.Then "grep "macb" timeline.csv"
+
+7.Then  "icat partition4.img 4945"
+  output : NzFtMzExbjNfMHU3MTEzcl9oM3JfNDNhMmU3YWYK
+
+8.Then "echo "NzFtMzExbjNfMHU3MTEzcl9oM3JfNDNhMmU3YWYK" | base64 -d"
+
+9.Output: 71m311n3_0u7113r_h3r_43a2e7af
+
+        means : picoCTF{71m311n3_0u7113r_h3r_43a2e7af
+}
+
+
+
+

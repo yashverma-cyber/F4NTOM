@@ -1,0 +1,14 @@
+1 Download the file --> "file"
+
+2.Go to the website --> https://hex-works.com/
+
+3.Upload your file here
+
+4.Here you will notice that the bytes of "file" is matching with jpeg file except 4 bytes.
+
+5. so edit it from "5C 78 FF E0" --> "FF D8 FF E0"
+
+6.Then save the file you will get you flag in the format of image.
+
+7. picoCTF{FIND_YOUR_SELF} 
+

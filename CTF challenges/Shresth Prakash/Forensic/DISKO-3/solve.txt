@@ -1,0 +1,45 @@
+Step:1 --> First gunzip the file "gunzip disko-3.dd".
+
+Step:3 --> Then "mkdir /tmp/disko3".
+
+Step:3 --> Then "mount disko-3.dd /tmp/disko3".
+
+Step:4 -->Then "cd /tmp/disko3 ".
+
+Step:5 --> Then "ls".
+
+log
+
+Step:6 --> Then "cd log".
+
+Step:7 --> Then "ls".
+
+alternatives.log       dpkg.log.2.gz  lastlog               vmware-network.2.log     vmware-vmsvc-root.3.log
+alternatives.log.2.gz  dpkg.log.4.gz  lightdm               vmware-network.3.log     vmware-vmsvc-root.log
+apt                    dpkg.log.5.gz  macchanger.log.4.gz   vmware-network.4.log     vmware-vmtoolsd-root.log
+boot.log               faillog        mysql                 vmware-network.5.log     wtmp
+boot.log.1             flag.gz        private               vmware-network.6.log     Xorg.0.log
+boot.log.5             inetsim        stunnel4              vmware-network.7.log     Xorg.0.log.old
+boot.log.6             installer      syslog.3.gz           vmware-network.8.log
+daemon.log             journal        syslog.4.gz           vmware-network.log
+debug                  kern.log.3.gz  sysstat               vmware-vmsvc-root.1.log
+dpkg.log.1             kern.log.4.gz  vmware-network.1.log  vmware-vmsvc-root.2.log
+                                                                                       
+
+Step:8 --> Then "gubzip flag.gz".
+
+gzip: flag: Read-only file system
+
+Step:9 --> Then "cp flag.gz /home/shresth/Desktop" ,copy the flag file on that pace where it has the permission.
+
+Step:10 --> Then "cd /home/shresth/Desktop".
+
+Step:11 --> Then "gunzip flag.gz".
+
+Step:12 -->Then "cat flag".
+
+Here is your flag
+picoCTF{n3v3r_z1p_2_h1d3_654235e0}
+                                       
+
+
