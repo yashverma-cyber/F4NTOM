@@ -1,0 +1,42 @@
+Step:1 -->First Filter the UDP Protocols.
+
+Step:2 -->Look for the port no. 55000. 
+
+Step:3 -->Right Click on it ->follow ->UDP stream(shortcut --> ctrl+alt+shift+U)
+
+Step:4 -->In the right corner of the stream section increase the no. untill you don't get "UNAUTHORIZED-TEST-NETWORK PLMN=00101 CELLID=91521 ".
+
+Step:5 -->Remember the CELLID.
+
+Step:6 -->Then filter the HTTP Protocols.
+
+Step:7 -->use  ctrl+alt+shift+H to see the HTTP stream.
+
+Step:8 -->In the right corner of the stream section increase the no. untill you don't get the pieces of Base64 encoding.
+
+Step:9 -->Combine all the pieces of the Base64 encoding then open Cyberchef and paste on it.
+
+Step:10 -->Again filter the HTTP Protocols.
+
+Step:11 -->Look for the all GET request.
+
+Step:12 -->Right Click on it ->follow ->HTTP stream.
+
+Step:13 -->Increase the stream no. Unit find that type of Request
+                 
+                -GET /api/register HTTP/1.1
+                 Host: network.carrier.com
+                 User-Agent: MobileDevice/1.0 (IMSI:310410050746829; CELL:91521)
+                 Accept: */*
+                 Connection: close
+
+Step:14 -->Now copy the IMSI no. except the starting of 6 digits.
+
+Step:15 -->Now go back to the cyberchef ,select "From base64 and XOR"
+
+Step:16 -->In XOR change HEX to UTF8.
+
+Step:17 -->Then Paste your IMSI no.
+
+Step:18 -->Click on Bake ,You will get the FLAG.
+

@@ -1,0 +1,24 @@
+1.we got the file named = digits.bin
+
+2.By using "file digits.bin".
+
+3. we get "digits.bin: ASCII text, with very long lines (65536), with no line terminators"
+
+4.We get that it is a Plain text.
+
+5.next "head -c 100 digits.bin"
+
+6. we get "11111111 11011000 11111111 11100000"
+
+7.BY converting this into hexadecimal we get this "FF D8 FF E0"
+
+8.This is the standard magic header for a JPEG image.
+
+9.we visited cyberchef.com
+
+10. upload the file(digits.bin) to cyberchef.com
+
+11. click on the magic button .
+
+12. we got "picoCTF{FIND_YOUR_SELF}"
+ 

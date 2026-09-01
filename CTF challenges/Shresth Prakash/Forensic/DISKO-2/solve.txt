@@ -1,0 +1,42 @@
+  GNU nano 9.1                                                             solve.txt *
+Step:! --> First gunzip the disk image by "gunzip disko-2.gz".
+
+Step:2 --> Check the Partitions by "fdisk -l disko-2.dd"
+
+Disk disko-2.dd: 100 MiB, 104857600 bytes, 204800 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x8ef8eaee
+
+Device      Boot Start    End Sectors  Size Id Type
+disko-2.dd1       2048  53247   51200   25M 83 Linux
+disko-2.dd2      53248 118783   65536   32M  b W95 FAT32
+
+Step:3 --> Then "dd if="disko-2.dd" of="linuxpartition.img" bs=512 skip=2048 count=53247" make the partition.
+
+Step:4 --> use "ls" to see the files.
+
+disko-2.dd  linuxpartition.img
+
+Step:5 -->strings linuxpartition.img | grep pico
+
+picoCTF{4_P4Rt_1t_i5_90a3f3d1}
+piconv
+:/icons/appicon
+piconv
+piconv
+piconv
+picoCTF{4_P4Rt_1t_i5_90a3f3d1}
+# $Id: piconv,v 2.8 2016/08/04 03:15:58 dankogai Exp $
+piconv -- iconv(1), reinvented in perl
+  piconv [-f from_encoding] [-t to_encoding]
+  piconv -l
+  piconv -r encoding_alias
+  piconv -h
+B<piconv> is perl version of B<iconv>, a character encoding converter
+a technology demonstrator for Perl 5.8.0, but you can use piconv in the
+piconv converts the character encoding of either STDIN or files
+Therefore, when both -f and -t are omitted, B<piconv> just acts
+

@@ -1,0 +1,19 @@
+1. You will get the file "confidential.pdf".
+
+2.go to the website --> "https://www.pdfyeah.com/view-pdf-metadata/"
+
+3.Upload the file confidential.pdf
+
+4.Click "Read metadata"
+
+5.Then Check the Authar section, you get a base64 encoding.
+
+6.Then copy the code 
+
+7.open cyberchef --> "https://gchq.github.io/CyberChef/"
+
+8. Paste you code there
+
+9.Then click on the magic button 
+
+10. Then you will get your flag --> picoCTF{FIND_YOUR_SELF}

@@ -1,0 +1,19 @@
+Step:1 --> firstly "evtxexport Windows_Logs.evtx > output.xml".
+
+Step:2 --> Then " mousepad output.xml  ".
+
+Step:3 --> Press Ctrl+F.
+
+Step:4 -->Then filter "==" this to find base64 encoding text
+ 
+cGljb0NURntFdjNudF92aTN3djNyXw==
+MXNfYV9wcjN0dHlfdXMzZnVsXw==
+
+Step:5 -->With this you will only get 2 encoding text.
+
+Step:6 -->Then filter "shutdown" this to find base64 encoding text
+
+dDAwbF84MWJhM2ZlOX0=
+
+Step:7 --> Open cyberchef to decode it.Then you will get your Flag.
+

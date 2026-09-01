@@ -1,0 +1,17 @@
+1.Download the file "myNetworkTraffic.pcap"
+
+NOTE:--> In this section the falg in devided into many parts and every part here is encoded in Base64.
+
+2.Open it using wireshark.
+
+3.Click on the "Time" to arrange to according to the time.
+
+4.Go down using the down key untill you find the alfanumerical characters with the sign "==".
+
+5.Then click on the alfa numerical character and then right click on the "TCP Segment data(12 bytes)" and then select "Show packet bytes".
+
+6.Then down left side in Decode option, select Base64 to automatically decode the encoding.
+
+7.THen copy the decoded part and paste some where else.
+
+8. Now repeat the step from 4 to 7 untill you get the full flag.
